@@ -1,39 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+    background-color: rgb(34,193,195,1); 
+    background-attachment: fixed;
     margin: 0;
-    background-color: #f0f0f0;
+    font-family: 'Poppins',sans-serif;
 }
-
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#form{
     width: 400px;
+    margin: 10vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1{
     text-align: center;
+    color: rgb(125, 37, 125);
 }
-
-input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    margin-top: 2%;
-    background-color: green;
-    border: none;
+#form button{
+    background-color: #752592;
     color: white;
+    border: 1px solid #752592;
     border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
 }
 
-   
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+}
+
+.input-group input:focus{
+    outline: 0;
+}
+
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: lightgreen;
+}
+
+.input-group.error input{
+    border-color: red;
+}
